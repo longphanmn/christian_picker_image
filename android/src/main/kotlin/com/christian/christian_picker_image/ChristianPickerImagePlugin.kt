@@ -52,7 +52,7 @@ class ChristianPickerImagePlugin : MethodCallHandler, PluginRegistry.ActivityRes
 
     private fun presentPicker(maxImages: Int) {
         ImagePicker.create(this.activity)
-                .imageDiretory("JoyllyCamera")
+                .imageDirectory("JoyllyCamera")
                 .limit(maxImages)
                 .showCamera(true)// Activity or Fragment
                 .start();
